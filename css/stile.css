@@ -15,6 +15,7 @@ img{
 }
 
 header {
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,18 +102,20 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   width: 32px;
   top: 16x;
   right: 16px;
-  z-index: 5;
+  z-index: 4;
   opacity: 0;
   cursor: pointer;
 }
 
 .intro{
     background-image: linear-gradient(350deg, #BFE8FF, #FFF6C8, #ffe1bd, #C3E7FF);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3)inset;
+
 }
 .intro_testo{
     max-width: 1200px;
     margin: 20px auto;
-    padding: 40px 0;
+    padding: 20px 0px 20px 0px;
 }
 .intro h1{
     color: #ff9900;
@@ -143,6 +146,7 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
 }
 
 .evidenza{
+    background-color: #ffffff;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 1px 1px 20px rgba(37, 37, 37, 0.4);
     margin-bottom: 20px;
@@ -158,6 +162,7 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
 }
 
 .citta{
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 1px 1px 20px rgba(37, 37, 37, 0.4);
     margin-bottom: 20px;
@@ -202,9 +207,11 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     text-align: center;
     margin: auto;
 }
+
 /*città*/
 .intro2 {
     background-image: linear-gradient(350deg, #BFE8FF, #FFF6C8, #ffe1bd, #C3E7FF);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3)inset;
 }
 .intro2 h1{
     color: #ff9900;
@@ -221,7 +228,8 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     display: flex;
     gap: 16px;
     background-color: #f9f9f9;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+    margin-top: 30px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 1px 1px 20px rgba(37, 37, 37, 0.4);
     height: auto;
@@ -234,8 +242,8 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
 .descrizione p{
     color: #545454;
     padding-right: 10px;
+    padding-left: 10px;
     font-size: 16px;
-    line-height: 24px;
 }
 /*--*/
 
@@ -249,19 +257,41 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     margin: 0;
     padding-top: 10px;
     gap: 10px;
-    font-size: 20px;
+    font-size: 18px;
     padding-right: 15px;
     padding-bottom: 20px;
 }
 .preparazione p{
-    font-size: 20px;
+    font-size: 18px;
     color: #545454;
+}
+/*--*/
+
+/*storia*/
+.storia{
+    margin-top: 50px;
+}
+.testo_uno{
+    display: flex;
+    gap: 18px;
+}
+.testo_uno img{
+    max-width: 65%;
+}
+.storia p{
+    font-size: 18px;
+    color: #545454;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.testo_due p{
+    padding-right: 20px;
 }
 /*--*/
 
 footer {
     color: #EDFAFF;
-    padding-top: 100px ;
+    padding-top: 120px ;
     display: flex;
     max-width: 1200px;
     margin: 40px auto;
@@ -304,7 +334,7 @@ footer p, footer a{
         opacity: 0;
         background-color: #ffffff;
         width: 100%;
-        height: 100%;
+        height: 500px;
         justify-content: center;
         text-align: center;
     }
@@ -332,17 +362,20 @@ footer p, footer a{
 
     .intro_testo{
         max-width: 1200px;
-        padding: 0;
+        height: 100px;
+        padding: 15px;
     }
     .intro h1{
         color: #ff9900;
         font-size: 34px;
-        margin: 0 0 0 10px;
     }
     .intro h3{
         color: #ff9900;
         font-size: 18px;
-        margin: 0 0 0 10px;
+    }
+
+    .titolo{
+        margin-top: 60px;
     }
 
     .titolo h2 {
@@ -360,21 +393,33 @@ footer p, footer a{
         padding-bottom: 20px;
     }
 
+    .chisiamotitolo{
+        text-align: center;
+        color: #ff9900;
+        font-size: 20px;
+        margin-top: 120px;
+    }
+    .chisiamo{
+        font-size: 16px;
+        gap: 16px;
+        margin-bottom: 80px;
+        color: #545454;
+        margin: auto;
+    }
+
     /*città*/
     .intro2{
         background-image: linear-gradient(350deg, #BFE8FF, #FFF6C8, #ffe1bd, #C3E7FF);
-        height: 200px;
+        height: 120px;
         text-align: center;
     }
     .intro2 h1{
         color: #ff9900;
-        padding-top: 50px;
-        font-size: 48px;
+        font-size: 38px;
     }
     .intro2 h3{
-        line-height: 1px;
         color: #ff9900;
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .descrizione{
@@ -408,14 +453,34 @@ footer p, footer a{
         padding-bottom: 20px;
     }
     .preparazione p{
-        font-size: 17px;
+        font-size: 15px;
         color: #545454;
+    }
+    /*--*/
+
+    /*storia*/
+    .storia{
+        margin-top: 50px;
+    }
+    .testo_uno{
+        display: grid;
+        gap: 14px;
+    }
+    .testo_uno img{
+        max-width: 50%;
+        margin: 0 auto
+    }
+    .storia p{
+        font-size: 14px;
+        color: #545454;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     /*--*/
 
     footer {
         color: #EDFAFF;
-        padding-top: 30px ;
+        padding-top: 100px ;
         display: flex;
         flex-direction: column;
         max-width: 1200px;
